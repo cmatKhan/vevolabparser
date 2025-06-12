@@ -1,0 +1,1535 @@
+"FUJIFILM VisualSonics Measurement Export"
+"Institution",""
+"Report Date","2025/6/4"
+
+"Version Information"
+"Company Name","Model","SW Version","SW Build","Report Version"
+"FUJIFILM VisualSonics, Inc.","Vevo LAB","5.9.0","3539","8"
+
+"Study","1"
+"Study Name","Feldeman HFpEF"
+"Owner User Name","Younger"
+"Granting Institution",""
+"Study Date","2025/5/10"
+"Study Time","20:45:31"
+"Study Notes",""
+
+
+"Series Name","12-0"
+"Acquired By","Younger"
+"Series Date","2025/5/10"
+"Series Time","20:45:31"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-14.438560","0.000000","-14.438560",,
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-13.903799","0.000000","-13.903799",,
+"MV A","PW Doppler Mode","Velocity","mm/s","150.056751","0.000000","150.056751","150.056751",
+"MV E","PW Doppler Mode","Velocity","mm/s","429.574229","0.000000","429.574229","429.574229",
+
+Calculation,,Units,
+"A'/E'",,"none",1.038462,
+"E'/A'",,"none",0.962963,
+"MV E/A",,"none",2.862745,
+"MV E/E'",,"none",-30.896177,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.878881","2.739318E-02","1.898251","1.859511",
+"LVAW;s","M-Mode","Depth","mm","2.111320","8.217955E-02","2.169430","2.053210",
+"LVID;d","M-Mode","Depth","mm","2.731157","8.217955E-02","2.673047","2.789267",
+"LVID;s","M-Mode","Depth","mm","1.627072","0.109573","1.704552","1.549593",
+"LVPW;d","M-Mode","Depth","mm","1.181564","0.191752","1.045975","1.317154",
+"LVPW;s","M-Mode","Depth","mm","1.491483","0.301325","1.278414","1.704552",
+
+Calculation,,Units,
+"EF",,"%",73.059465,
+"FS",,"%",40.425541,
+"LV Mass AW",,"mg",183.109754,
+"LV Mass AW (Corrected)",,"mg",146.487803,
+"LV Vol;d",,"uL",27.792188,
+"LV Vol;s",,"uL",7.487364,
+
+
+
+"Series Name","12-a"
+"Acquired By","Younger"
+"Series Date","2025/5/10"
+"Series Time","20:57:01"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-24.064267","0.000000","-24.064267",,
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-26.203313","0.000000","-26.203313",,
+"MV A","PW Doppler Mode","Velocity","mm/s","307.351280","8.109335","301.617115","313.085446",
+"MV E","PW Doppler Mode","Velocity","mm/s","556.787487","12.164002","565.388736","548.186239",
+
+Calculation,,Units,
+"A'/E'",,"none",0.918367,
+"E'/A'",,"none",1.088889,
+"MV E/A",,"none",1.811567,
+"MV E/E'",,"none",-21.248744,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.171739","5.178404E-02","1.135122","1.208356",
+"LVAW;s","M-Mode","Depth","mm","1.611141","0.155352","1.720992","1.501291",
+"LVID;d","M-Mode","Depth","mm","3.716610","7.767606E-02","3.771535","3.661684",
+"LVID;s","M-Mode","Depth","mm","2.709647","0.155352","2.599796","2.819497",
+"LVPW;d","M-Mode","Depth","mm","0.933730","2.589202E-02","0.952038","0.915421",
+"LVPW;s","M-Mode","Depth","mm","1.098505","0.155352","1.208356","0.988655",
+
+Calculation,,Units,
+"EF",,"%",53.610780,
+"FS",,"%",27.093588,
+"LV Mass AW",,"mg",153.749021,
+"LV Mass AW (Corrected)",,"mg",122.999217,
+"LV Vol;d",,"uL",58.752753,
+"LV Vol;s",,"uL",27.254944,
+
+
+
+"Series Name","3-0"
+"Acquired By","Younger"
+"Series Date","2025/5/10"
+"Series Time","21:04:18"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application","Cardiac"
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-13.903799","0.000000","-13.903799",,
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-13.903799","0.000000","-13.903799",,
+"MV A","PW Doppler Mode","Velocity","mm/s","241.196911","45.156326","209.266566","273.127255",
+"MV E","PW Doppler Mode","Velocity","mm/s","415.585716","0.000000","415.585716","415.585716",
+
+Calculation,,Units,
+"A'/E'",,"none",1.000000,
+"E'/A'",,"none",1.000000,
+"MV E/A",,"none",1.723014,
+"MV E/E'",,"none",-29.890084,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.188281","0.129268","1.279688","1.096875",
+"LVAW;s","M-Mode","Depth","mm","1.691016","0.129268","1.782422","1.599609",
+"LVID;d","M-Mode","Depth","mm","3.427734","6.463398E-02","3.382031","3.473438",
+"LVID;s","M-Mode","Depth","mm","2.285156","6.463398E-02","2.239453","2.330859",
+"LVPW;d","M-Mode","Depth","mm","1.211133","3.231699E-02","1.233984","1.188281",
+"LVPW;s","M-Mode","Depth","mm","1.485352","0.161585","1.371094","1.599609",
+
+Calculation,,Units,
+"EF",,"%",63.144535,
+"FS",,"%",33.333333,
+"LV Mass AW",,"mg",165.943258,
+"LV Mass AW (Corrected)",,"mg",132.754606,
+"LV Vol;d",,"uL",48.374853,
+"LV Vol;s",,"uL",17.828777,
+
+
+
+"Series Name","2-a"
+"Acquired By","Younger"
+"Series Date","2025/5/10"
+"Series Time","21:21:45"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-23.529506","0.756267","-24.064267","-22.994744",
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-20.855698","0.756267","-20.320937","-21.390460",
+"MV A","PW Doppler Mode","Velocity","mm/s","198.396513","49.157352","163.637016","233.156010",
+"MV E","PW Doppler Mode","Velocity","mm/s","594.120016","41.594682","564.708134","623.531898",
+
+Calculation,,Units,
+"A'/E'",,"none",1.128205,
+"E'/A'",,"none",0.886364,
+"MV E/A",,"none",2.994609,
+"MV E/E'",,"none",-28.487180,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.508203","0.258536","1.325391","1.691016",
+"LVAW;s","M-Mode","Depth","mm","1.736719","0.129268","1.828125","1.645312",
+"LVID;d","M-Mode","Depth","mm","2.650781","0.581706","3.062109","2.239453",
+"LVID;s","M-Mode","Depth","mm","1.302539","0.161585","1.188281","1.416797",
+"LVPW;d","M-Mode","Depth","mm","1.919531","0.387804","1.645312","2.193750",
+"LVPW;s","M-Mode","Depth","mm","2.833594","0.129268","2.925000","2.742187",
+
+Calculation,,Units,
+"EF",,"%",83.815117,
+"FS",,"%",50.862067,
+"LV Mass AW",,"mg",216.881127,
+"LV Mass AW (Corrected)",,"mg",173.504902,
+"LV Vol;d",,"uL",25.814341,
+"LV Vol;s",,"uL",4.178021,
+
+
+
+"Series Name","2-f"
+"Acquired By","Younger"
+"Series Date","2025/5/10"
+"Series Time","21:32:20"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-25.401171","3.403201","-27.807597","-22.994744",
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-20.053556","3.403201","-22.459983","-17.647129",
+"MV A","PW Doppler Mode","Velocity","mm/s","449.734413","11.344004","457.755836","441.712991",
+"MV E","PW Doppler Mode","Velocity","mm/s","634.227127","22.688009","650.269972","618.184283",
+
+Calculation,,Units,
+"A'/E'",,"none",1.266667,
+"E'/A'",,"none",0.789474,
+"MV E/A",,"none",1.410226,
+"MV E/E'",,"none",-31.626666,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.074023","3.231699E-02","1.096875","1.051172",
+"LVAW;s","M-Mode","Depth","mm","1.713867","3.231699E-02","1.736719","1.691016",
+"LVID;d","M-Mode","Depth","mm","2.993555","9.695097E-02","2.925000","3.062109",
+"LVID;s","M-Mode","Depth","mm","1.759570","3.231699E-02","1.782422","1.736719",
+"LVPW;d","M-Mode","Depth","mm","1.919531","6.463398E-02","1.873828","1.965234",
+"LVPW;s","M-Mode","Depth","mm","2.216602","9.695097E-02","2.285156","2.148047",
+
+Calculation,,Units,
+"EF",,"%",73.667954,
+"FS",,"%",41.221391,
+"LV Mass AW",,"mg",197.736976,
+"LV Mass AW (Corrected)",,"mg",158.189581,
+"LV Vol;d",,"uL",34.816463,
+"LV Vol;s",,"uL",9.167887,
+
+
+
+"Series Name","2-0"
+"Acquired By","Younger"
+"Series Date","2025/5/10"
+"Series Time","21:42:45"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-8.556184","0.000000","-8.556184",,
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-8.556184","0.000000","-8.556184",,
+"MV A","PW Doppler Mode","Velocity","mm/s","358.824960","3.781335","356.151153","361.498767",
+"MV E","PW Doppler Mode","Velocity","mm/s","570.055749","15.125339","559.360519","580.750978",
+
+Calculation,,Units,
+"A'/E'",,"none",1.000000,
+"E'/A'",,"none",1.000000,
+"MV E/A",,"none",1.588674,
+"MV E/E'",,"none",-66.624999,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","0.822656","6.463398E-02","0.868359","0.776953",
+"LVAW;s","M-Mode","Depth","mm","1.279688","6.463398E-02","1.233984","1.325391",
+"LVID;d","M-Mode","Depth","mm","3.199219","0.387804","2.925000","3.473438",
+"LVID;s","M-Mode","Depth","mm","1.873828","0.193902","1.736719","2.010937",
+"LVPW;d","M-Mode","Depth","mm","1.531055","9.695097E-02","1.599609","1.462500",
+"LVPW;s","M-Mode","Depth","mm","2.102344","0.646340","2.559375","1.645312",
+
+Calculation,,Units,
+"EF",,"%",73.675044,
+"FS",,"%",41.428580,
+"LV Mass AW",,"mg",145.820239,
+"LV Mass AW (Corrected)",,"mg",116.656191,
+"LV Vol;d",,"uL",40.935726,
+"LV Vol;s",,"uL",10.776312,
+
+
+
+"Series Name","3-a"
+"Acquired By","Younger"
+"Series Date","2025/5/11"
+"Series Time","14:39:52"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-15.775464","0.378133","-15.508083","-16.042845",
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-14.438560","2.268801","-12.834276","-16.042845",
+"MV A","PW Doppler Mode","Velocity","mm/s","209.608596","0.000000","209.608596","209.608596",
+"MV E","PW Doppler Mode","Velocity","mm/s","542.160695","0.000000","542.160695","542.160695",
+
+Calculation,,Units,
+"A'/E'",,"none",1.092593,
+"E'/A'",,"none",0.915254,
+"MV E/A",,"none",2.586538,
+"MV E/E'",,"none",-37.549499,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.416797","0.129268","1.508203","1.325391",
+"LVAW;s","M-Mode","Depth","mm","1.759570","3.231699E-02","1.782422","1.736719",
+"LVID;d","M-Mode","Depth","mm","3.382031","6.463398E-02","3.336328","3.427734",
+"LVID;s","M-Mode","Depth","mm","2.239453","6.463398E-02","2.193750","2.285156",
+"LVPW;d","M-Mode","Depth","mm","1.028320","3.231699E-02","1.051172","1.005469",
+"LVPW;s","M-Mode","Depth","mm","1.416797","0.193902","1.553906","1.279688",
+
+Calculation,,Units,
+"EF",,"%",63.816820,
+"FS",,"%",33.783783,
+"LV Mass AW",,"mg",167.617064,
+"LV Mass AW (Corrected)",,"mg",134.093651,
+"LV Vol;d",,"uL",46.832827,
+"LV Vol;s",,"uL",16.945606,
+
+
+
+"Series Name","10-0"
+"Acquired By","Younger"
+"Series Date","2025/5/10"
+"Series Time","22:00:31"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-18.984033","1.890667","-20.320937","-17.647129",
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-17.112368","2.268801","-18.716652","-15.508083",
+"MV A","PW Doppler Mode","Velocity","mm/s","227.808395","45.376017","259.894084","195.722705",
+"MV E","PW Doppler Mode","Velocity","mm/s","350.803538","15.125339","361.498767","340.108308",
+
+Calculation,,Units,
+"A'/E'",,"none",1.109375,
+"E'/A'",,"none",0.901408,
+"MV E/A",,"none",1.539906,
+"MV E/E'",,"none",-20.500000,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.096875","0.193902","0.959766","1.233984",
+"LVAW;s","M-Mode","Depth","mm","1.393945","3.231699E-02","1.371094","1.416797",
+"LVID;d","M-Mode","Depth","mm","3.633398","9.695097E-02","3.701953","3.564844",
+"LVID;s","M-Mode","Depth","mm","2.627930","0.161585","2.742188","2.513672",
+"LVPW;d","M-Mode","Depth","mm","1.165430","9.695097E-02","1.233984","1.096875",
+"LVPW;s","M-Mode","Depth","mm","1.416797","0.129268","1.325391","1.508203",
+
+Calculation,,Units,
+"EF",,"%",54.597977,
+"FS",,"%",27.672939,
+"LV Mass AW",,"mg",165.283085,
+"LV Mass AW (Corrected)",,"mg",132.226468,
+"LV Vol;d",,"uL",55.651258,
+"LV Vol;s",,"uL",25.266797,
+
+
+
+"Series Name","1-a"
+"Acquired By","Younger"
+"Series Date","2025/5/10"
+"Series Time","22:11:03"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-16.042845","0.000000","-16.042845","-16.042845",
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-10.427849","0.378133","-10.695230","-10.160468",
+"MV A","PW Doppler Mode","Velocity","mm/s","305.348811","18.906674","291.979774","318.717848",
+"MV E","PW Doppler Mode","Velocity","mm/s","404.279687","7.562670","398.932072","409.627302",
+
+Calculation,,Units,
+"A'/E'",,"none",1.538462,
+"E'/A'",,"none",0.650000,
+"MV E/A",,"none",1.323993,
+"MV E/E'",,"none",-38.769231,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.233984","0.258536","1.051172","1.416797",
+"LVAW;s","M-Mode","Depth","mm","1.439648","3.231699E-02","1.416797","1.462500",
+"LVID;d","M-Mode","Depth","mm","3.679102","0.161585","3.793359","3.564844",
+"LVID;s","M-Mode","Depth","mm","2.787891","0.129268","2.696484","2.879297",
+"LVPW;d","M-Mode","Depth","mm","1.279688","0.000000","1.279688","1.279688",
+"LVPW;s","M-Mode","Depth","mm","1.348242","3.231699E-02","1.325391","1.371094",
+
+Calculation,,Units,
+"EF",,"%",49.014056,
+"FS",,"%",24.223601,
+"LV Mass AW",,"mg",197.644005,
+"LV Mass AW (Corrected)",,"mg",158.115204,
+"LV Vol;d",,"uL",57.343487,
+"LV Vol;s",,"uL",29.237118,
+
+
+
+"Series Name","1-f"
+"Acquired By","Younger"
+"Series Date","2025/5/10"
+"Series Time","22:20:12"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-15.508083","0.000000","-15.508083","-15.508083",
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-16.042845","0.756267","-16.577606","-15.508083",
+"MV A","PW Doppler Mode","Velocity","mm/s","135.539950","3.536576","138.040687","133.039213",
+"MV E","PW Doppler Mode","Velocity","mm/s","420.623978","31.829187","398.117344","443.130612",
+
+Calculation,,Units,
+"A'/E'",,"none",0.966667,
+"E'/A'",,"none",1.034483,
+"MV E/A",,"none",3.103321,
+"MV E/E'",,"none",-26.218790,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.393945","3.231699E-02","1.371094","1.416797",
+"LVAW;s","M-Mode","Depth","mm","1.828125","0.258536","2.010937","1.645312",
+"LVID;d","M-Mode","Depth","mm","3.153516","0.000000","3.153516","3.153516",
+"LVID;s","M-Mode","Depth","mm","2.308008","0.226219","2.148047","2.467969",
+"LVPW;d","M-Mode","Depth","mm","1.302539","3.231699E-02","1.279688","1.325391",
+"LVPW;s","M-Mode","Depth","mm","1.485352","3.231699E-02","1.508203","1.462500",
+
+Calculation,,Units,
+"EF",,"%",53.755760,
+"FS",,"%",26.811597,
+"LV Mass AW",,"mg",177.789542,
+"LV Mass AW (Corrected)",,"mg",142.231634,
+"LV Vol;d",,"uL",39.528936,
+"LV Vol;s",,"uL",18.279856,
+
+
+
+"Series Name","9-a"
+"Acquired By","Younger"
+"Series Date","2025/5/11"
+"Series Time","14:19:27"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Instance 1"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-16.577606",
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-10.695230",
+"MV A","PW Doppler Mode","Velocity","mm/s","313.370233",
+"MV E","PW Doppler Mode","Velocity","mm/s","521.927214",
+
+Calculation,,Units,
+"A'/E'",,"none",1.550000,
+"E'/A'",,"none",0.645161,
+"MV E/A",,"none",1.665529,
+"MV E/E'",,"none",-48.799999,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","0.936914","0.161585","0.822656","1.051172",
+"LVAW;s","M-Mode","Depth","mm","1.348242","0.161585","1.233984","1.462500",
+"LVID;d","M-Mode","Depth","mm","3.427734","6.463398E-02","3.473437","3.382031",
+"LVID;s","M-Mode","Depth","mm","2.376562","6.463398E-02","2.422266","2.330859",
+"LVPW;d","M-Mode","Depth","mm","1.074023","3.231699E-02","1.096875","1.051172",
+"LVPW;s","M-Mode","Depth","mm","1.325391","0.000000","1.325391","1.325391",
+
+Calculation,,Units,
+"EF",,"%",59.335928,
+"FS",,"%",30.666644,
+"LV Mass AW",,"mg",126.989211,
+"LV Mass AW (Corrected)",,"mg",101.591369,
+"LV Vol;d",,"uL",48.374853,
+"LV Vol;s",,"uL",19.671185,
+
+
+
+"Series Name","13-0"
+"Acquired By","Younger"
+"Series Date","2025/5/10"
+"Series Time","22:30:02"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-23.529506","0.000000","-23.529506","-23.529506",
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-15.775464","1.890667","-14.438560","-17.112368",
+"MV A","PW Doppler Mode","Velocity","mm/s","487.167718","18.906674","500.536755","473.798680",
+"MV E","PW Doppler Mode","Velocity","mm/s","706.419929","49.157352","741.179425","671.660432",
+
+Calculation,,Units,
+"A'/E'",,"none",1.491525,
+"E'/A'",,"none",0.670455,
+"MV E/A",,"none",1.450055,
+"MV E/E'",,"none",-44.779661,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.256836","3.231699E-02","1.233984","1.279688",
+"LVAW;s","M-Mode","Depth","mm","1.599609","0.193902","1.736719","1.462500",
+"LVID;d","M-Mode","Depth","mm","2.742188","0.129268","2.650781","2.833594",
+"LVID;s","M-Mode","Depth","mm","1.805273","0.161585","1.691016","1.919531",
+"LVPW;d","M-Mode","Depth","mm","2.079492","0.161585","2.193750","1.965234",
+"LVPW;s","M-Mode","Depth","mm","2.148047","0.193902","2.285156","2.010937",
+
+Calculation,,Units,
+"EF",,"%",65.110821,
+"FS",,"%",34.166695,
+"LV Mass AW",,"mg",214.781499,
+"LV Mass AW (Corrected)",,"mg",171.825199,
+"LV Vol;d",,"uL",28.069958,
+"LV Vol;s",,"uL",9.793378,
+
+
+
+"Series Name","4-a"
+"Acquired By","Younger"
+"Series Date","2025/5/11"
+"Series Time","14:46:12"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-24.064267","0.000000","-24.064267",,
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-11.229991","0.000000","-11.229991",,
+"MV A","PW Doppler Mode","Velocity","mm/s","217.113165","15.125339","206.417935","227.808395",
+"MV E","PW Doppler Mode","Velocity","mm/s","468.451065","37.813348","441.712991","495.189140",
+
+Calculation,,Units,
+"A'/E'",,"none",2.142857,
+"E'/A'",,"none",0.466667,
+"MV E/A",,"none",2.157635,
+"MV E/E'",,"none",-41.714287,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.896680","0.226219","1.736719","2.056641",
+"LVAW;s","M-Mode","Depth","mm","2.010937","0.193902","2.148047","1.873828",
+"LVID;d","M-Mode","Depth","mm","2.879297","0.193902","3.016406","2.742187",
+"LVID;s","M-Mode","Depth","mm","1.668164","0.226219","1.508203","1.828125",
+"LVPW;d","M-Mode","Depth","mm","1.119727","0.161585","1.005469","1.233984",
+"LVPW;s","M-Mode","Depth","mm","1.439648","9.695097E-02","1.508203","1.371094",
+
+Calculation,,Units,
+"EF",,"%",74.763189,
+"FS",,"%",42.063497,
+"LV Mass AW",,"mg",190.656508,
+"LV Mass AW (Corrected)",,"mg",152.525206,
+"LV Vol;d",,"uL",31.650556,
+"LV Vol;s",,"uL",7.987591,
+
+
+
+"Series Name","13-a"
+"Acquired By","Younger"
+"Series Date","2025/5/10"
+"Series Time","22:35:06"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-33.957355","1.890667","-35.294258","-32.620451",
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-21.123079","4.159468","-24.064267","-18.181891",
+"MV A","PW Doppler Mode","Velocity","mm/s","160.963209","11.344004","152.941786","168.984631",
+"MV E","PW Doppler Mode","Velocity","mm/s","358.824960","3.781335","361.498767","356.151153",
+
+Calculation,,Units,
+"A'/E'",,"none",1.607595,
+"E'/A'",,"none",0.622047,
+"MV E/A",,"none",2.229236,
+"MV E/E'",,"none",-16.987342,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.531055","9.695097E-02","1.462500","1.599609",
+"LVAW;s","M-Mode","Depth","mm","1.896680","9.695097E-02","1.828125","1.965234",
+"LVID;d","M-Mode","Depth","mm","1.988086","3.231699E-02","2.010938","1.965234",
+"LVID;s","M-Mode","Depth","mm","0.936914","3.231699E-02","0.914063","0.959766",
+"LVPW;d","M-Mode","Depth","mm","2.308008","3.231699E-02","2.285156","2.330859",
+"LVPW;s","M-Mode","Depth","mm","2.376563","0.258536","2.559375","2.193750",
+
+Calculation,,Units,
+"EF",,"%",86.236659,
+"FS",,"%",52.873568,
+"LV Mass AW",,"mg",200.077203,
+"LV Mass AW (Corrected)",,"mg",160.061762,
+"LV Vol;d",,"uL",12.535118,
+"LV Vol;s",,"uL",1.725251,
+
+
+
+"Series Name","9-F"
+"Acquired By","Younger"
+"Series Date","2025/5/11"
+"Series Time","14:06:38"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-18.181891","0.756267","-17.647129","-18.716652",
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-12.032134","0.378133","-12.299514","-11.764753",
+"MV A","PW Doppler Mode","Velocity","mm/s","258.774691","72.365501","309.944828","207.604555",
+"MV E","PW Doppler Mode","Velocity","mm/s","339.184906","48.243668","373.298331","305.071482",
+
+Calculation,,Units,
+"A'/E'",,"none",1.511111,
+"E'/A'",,"none",0.661765,
+"MV E/A",,"none",1.310734,
+"MV E/E'",,"none",-28.189921,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.074023","9.695097E-02","1.005469","1.142578",
+"LVAW;s","M-Mode","Depth","mm","1.645312","6.463398E-02","1.599609","1.691016",
+"LVID;d","M-Mode","Depth","mm","3.062109","0.129268","3.153516","2.970703",
+"LVID;s","M-Mode","Depth","mm","1.965234","0.129268","2.056641","1.873828",
+"LVPW;d","M-Mode","Depth","mm","1.508203","6.463398E-02","1.462500","1.553906",
+"LVPW;s","M-Mode","Depth","mm","1.713867","3.231699E-02","1.736719","1.691016",
+
+Calculation,,Units,
+"EF",,"%",66.922421,
+"FS",,"%",35.820900,
+"LV Mass AW",,"mg",159.116983,
+"LV Mass AW (Corrected)",,"mg",127.293586,
+"LV Vol;d",,"uL",36.795916,
+"LV Vol;s",,"uL",12.171198,
+
+
+
+"Series Name","9-0"
+"Acquired By","Younger"
+"Series Date","2025/5/11"
+"Series Time","14:14:13"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-18.984033","0.378133","-19.251414","-18.716652",
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-12.834276","1.512534","-13.903799","-11.764753",
+"MV A","PW Doppler Mode","Velocity","mm/s","239.687791","51.777453","203.075603","276.299979",
+"MV E","PW Doppler Mode","Velocity","mm/s","327.557043","3.451830","329.997855","325.116230",
+
+Calculation,,Units,
+"A'/E'",,"none",1.479167,
+"E'/A'",,"none",0.676056,
+"MV E/A",,"none",1.366599,
+"MV E/E'",,"none",-25.522051,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.233984","0.129268","1.142578","1.325391",
+"LVAW;s","M-Mode","Depth","mm","1.416797","0.129268","1.325391","1.508203",
+"LVID;d","M-Mode","Depth","mm","3.450586","9.695097E-02","3.519141","3.382031",
+"LVID;s","M-Mode","Depth","mm","2.673633","0.161585","2.787891","2.559375",
+"LVPW;d","M-Mode","Depth","mm","1.051172","6.463398E-02","1.096875","1.005469",
+"LVPW;s","M-Mode","Depth","mm","1.211133","3.231699E-02","1.188281","1.233984",
+
+Calculation,,Units,
+"EF",,"%",46.357732,
+"FS",,"%",22.516552,
+"LV Mass AW",,"mg",155.437658,
+"LV Mass AW (Corrected)",,"mg",124.350126,
+"LV Vol;d",,"uL",49.156080,
+"LV Vol;s",,"uL",26.368436,
+
+
+
+"Series Name","15-0"
+"Acquired By","Younger"
+"Series Date","2025/5/11"
+"Series Time","14:28:36"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-20.855698","0.000000","-20.855698",,
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-10.160468","0.000000","-10.160468",,
+"MV A","PW Doppler Mode","Velocity","mm/s","227.327710","10.460627","219.930930","234.724490",
+"MV E","PW Doppler Mode","Velocity","mm/s","390.056874","24.408129","372.797720","407.316027",
+
+Calculation,,Units,
+"A'/E'",,"none",2.052632,
+"E'/A'",,"none",0.487179,
+"MV E/A",,"none",1.715835,
+"MV E/E'",,"none",-38.389656,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.485352","9.695097E-02","1.553906","1.416797",
+"LVAW;s","M-Mode","Depth","mm","1.782422","0.323170","2.010937","1.553906",
+"LVID;d","M-Mode","Depth","mm","2.765039","9.695097E-02","2.833594","2.696484",
+"LVID;s","M-Mode","Depth","mm","1.828125","6.463398E-02","1.782422","1.873828",
+"LVPW;d","M-Mode","Depth","mm","1.256836","0.161585","1.371094","1.142578",
+"LVPW;s","M-Mode","Depth","mm","1.599609","6.463398E-02","1.553906","1.645312",
+
+Calculation,,Units,
+"EF",,"%",64.694718,
+"FS",,"%",33.884296,
+"LV Mass AW",,"mg",153.624035,
+"LV Mass AW (Corrected)",,"mg",122.899228,
+"LV Vol;d",,"uL",28.650237,
+"LV Vol;s",,"uL",10.115047,
+
+
+
+"Series Name","4-0"
+"Acquired By","Younger"
+"Series Date","2025/5/11"
+"Series Time","14:55:20"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-19.786175","0.756267","-19.251414","-20.320937",
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-11.497372","1.890667","-10.160468","-12.834276",
+"MV A","PW Doppler Mode","Velocity","mm/s","337.434500","18.906674","324.065463","350.803538",
+"MV E","PW Doppler Mode","Velocity","mm/s","420.322531","37.813348","393.584457","447.060606",
+
+Calculation,,Units,
+"A'/E'",,"none",1.720930,
+"E'/A'",,"none",0.581081,
+"MV E/A",,"none",1.245642,
+"MV E/E'",,"none",-36.558140,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.142578","0.000000","1.142578","1.142578",
+"LVAW;s","M-Mode","Depth","mm","1.416797","6.463398E-02","1.462500","1.371094",
+"LVID;d","M-Mode","Depth","mm","3.450586","3.231699E-02","3.473438","3.427734",
+"LVID;s","M-Mode","Depth","mm","2.719336","3.231699E-02","2.696484","2.742188",
+"LVPW;d","M-Mode","Depth","mm","1.188281","0.000000","1.188281","1.188281",
+"LVPW;s","M-Mode","Depth","mm","1.256836","0.226219","1.096875","1.416797",
+
+Calculation,,Units,
+"EF",,"%",44.063436,
+"FS",,"%",21.192053,
+"LV Mass AW",,"mg",160.225386,
+"LV Mass AW (Corrected)",,"mg",128.180309,
+"LV Vol;d",,"uL",49.156080,
+"LV Vol;s",,"uL",27.496222,
+
+
+
+"Series Name","11-a"
+"Acquired By","Younger"
+"Series Date","2025/5/11"
+"Series Time","15:12:39"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Instance 1"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-12.834276",
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-12.834276",
+"MV A","PW Doppler Mode","Velocity","mm/s","272.053043",
+"MV E","PW Doppler Mode","Velocity","mm/s","590.943056",
+
+Calculation,,Units,
+"A'/E'",,"none",1.000000,
+"E'/A'",,"none",1.000000,
+"MV E/A",,"none",2.172161,
+"MV E/E'",,"none",-46.044129,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","0.868359","0.129268","0.959766","0.776953",
+"LVAW;s","M-Mode","Depth","mm","1.393945","9.695097E-02","1.462500","1.325391",
+"LVID;d","M-Mode","Depth","mm","3.793359","0.129268","3.701953","3.884766",
+"LVID;s","M-Mode","Depth","mm","2.582227","0.226219","2.422266","2.742188",
+"LVPW;d","M-Mode","Depth","mm","1.051172","0.193902","0.914063","1.188281",
+"LVPW;s","M-Mode","Depth","mm","1.211133","0.161585","1.325391","1.096875",
+
+Calculation,,Units,
+"EF",,"%",60.788436,
+"FS",,"%",31.927693,
+"LV Mass AW",,"mg",138.856390,
+"LV Mass AW (Corrected)",,"mg",111.085112,
+"LV Vol;d",,"uL",61.694099,
+"LV Vol;s",,"uL",24.191221,
+
+
+
+"Series Name","14-0"
+"Acquired By","Younger"
+"Series Date","2025/5/11"
+"Series Time","15:05:57"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-17.647129","0.000000","-17.647129",,
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-12.299514","0.000000","-12.299514",,
+"MV A","PW Doppler Mode","Velocity","mm/s","118.182289","26.469343","136.898942","99.465637",
+"MV E","PW Doppler Mode","Velocity","mm/s","313.370233","37.813348","286.632159","340.108308",
+
+Calculation,,Units,
+"A'/E'",,"none",1.434783,
+"E'/A'",,"none",0.696970,
+"MV E/A",,"none",2.651584,
+"MV E/E'",,"none",-25.478261,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.233984","0.000000","1.233984","1.233984",
+"LVAW;s","M-Mode","Depth","mm","1.622461","9.695097E-02","1.553906","1.691016",
+"LVID;d","M-Mode","Depth","mm","3.084961","3.231699E-02","3.062109","3.107813",
+"LVID;s","M-Mode","Depth","mm","2.308008","0.226219","2.467969","2.148047",
+"LVPW;d","M-Mode","Depth","mm","1.211133","0.355487","1.462500","0.959766",
+"LVPW;s","M-Mode","Depth","mm","1.416797","6.463398E-02","1.462500","1.371094",
+
+Calculation,,Units,
+"EF",,"%",51.213547,
+"FS",,"%",25.185181,
+"LV Mass AW",,"mg",147.167288,
+"LV Mass AW (Corrected)",,"mg",117.733830,
+"LV Vol;d",,"uL",37.469123,
+"LV Vol;s",,"uL",18.279856,
+
+
+
+"Series Name","5-a"
+"Acquired By","Younger"
+"Series Date","2025/5/11"
+"Series Time","15:20:51"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-16.042845","0.000000","-16.042845",,
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-20.320937","0.000000","-20.320937",,
+"MV A","PW Doppler Mode","Velocity","mm/s","444.386798","11.344004","436.365376","452.408221",
+"MV E","PW Doppler Mode","Velocity","mm/s","481.820103","18.906674","468.451065","495.189140",
+
+Calculation,,Units,
+"A'/E'",,"none",0.789474,
+"E'/A'",,"none",1.266667,
+"MV E/A",,"none",1.084236,
+"MV E/E'",,"none",-23.710526,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.599609","6.463398E-02","1.553906","1.645312",
+"LVAW;s","M-Mode","Depth","mm","1.942383","3.231699E-02","1.965234","1.919531",
+"LVID;d","M-Mode","Depth","mm","3.222070","3.231699E-02","3.244922","3.199219",
+"LVID;s","M-Mode","Depth","mm","2.467969","6.463398E-02","2.422266","2.513672",
+"LVPW;d","M-Mode","Depth","mm","1.211133","9.695097E-02","1.279688","1.142578",
+"LVPW;s","M-Mode","Depth","mm","1.531055","3.231699E-02","1.553906","1.508203",
+
+Calculation,,Units,
+"EF",,"%",48.100564,
+"FS",,"%",23.404240,
+"LV Mass AW",,"mg",195.976392,
+"LV Mass AW (Corrected)",,"mg",156.781114,
+"LV Vol;d",,"uL",41.649204,
+"LV Vol;s",,"uL",21.615702,
+
+
+
+"Series Name","8-0"
+"Acquired By","Younger"
+"Series Date","2025/5/11"
+"Series Time","15:31:47"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-16.577606","0.756267","-17.112368","-16.042845",
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-12.834276","4.537602","-9.625707","-16.042845",
+"MV A","PW Doppler Mode","Velocity","mm/s","227.808395","0.000000","227.808395",,
+"MV E","PW Doppler Mode","Velocity","mm/s","532.622444","0.000000","532.622444",,
+
+Calculation,,Units,
+"A'/E'",,"none",1.291667,
+"E'/A'",,"none",0.774194,
+"MV E/A",,"none",2.338028,
+"MV E/E'",,"none",-41.499999,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.713867","3.231699E-02","1.736719","1.691016",
+"LVAW;s","M-Mode","Depth","mm","1.988086","0.226219","1.828125","2.148047",
+"LVID;d","M-Mode","Depth","mm","3.244922","0.193902","3.382031","3.107813",
+"LVID;s","M-Mode","Depth","mm","1.965234","0.064634","2.010937","1.919531",
+"LVPW;d","M-Mode","Depth","mm","1.668164","9.695097E-02","1.599609","1.736719",
+"LVPW;s","M-Mode","Depth","mm","2.010937","0.000000","2.010937","2.010937",
+
+Calculation,,Units,
+"EF",,"%",71.273650,
+"FS",,"%",39.436634,
+"LV Mass AW",,"mg",270.479008,
+"LV Mass AW (Corrected)",,"mg",216.383206,
+"LV Vol;d",,"uL",42.369455,
+"LV Vol;s",,"uL",12.171198,
+
+
+
+"Series Name","10-a"
+"Acquired By","Younger"
+"Series Date","2025/5/11"
+"Series Time","15:40:16"
+"Animal ID",""
+"Sex",""
+"Series Notes",""
+"Application",""
+"Measurement Package",""
+"Color",""
+"Strain",""
+"Source",""
+"Weight",""
+"Type",""
+"Date of Birth",""
+"Temperature",""
+"Heart Rate",""
+"Anesthetic Type",""
+"Anesthetic On",""
+"Anesthetic Off",""
+"Protocol ID",""
+"Protocol Name",""
+"Injectable",""
+"Injection Site",""
+"Injection Amount",""
+
+
+
+"Measurement File","VSI_CardiacPackage.sxml"
+"Measurement Version","5"
+"Measurement Description","Cardiac Package"
+
+"Protocol Name","MV Flow"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"A'","PW Tissue Doppler Mode","Velocity","mm/s","-21.925221","1.512534","-22.994744","-20.855698",
+"E'","PW Tissue Doppler Mode","Velocity","mm/s","-25.401171","4.159468","-28.342359","-22.459983",
+"MV A","PW Doppler Mode","Velocity","mm/s","374.867805","11.344004","366.846382","382.889227",
+"MV E","PW Doppler Mode","Velocity","mm/s","529.948637","18.906674","516.579600","543.317674",
+
+Calculation,,Units,
+"A'/E'",,"none",0.863158,
+"E'/A'",,"none",1.158537,
+"MV E/A",,"none",1.413695,
+"MV E/E'",,"none",-20.863158,
+
+"Protocol Name","SAX M-Mode"
+,,,
+"Measurement","Mode","Parameter","Units","Avg","STD","Instance 1","Instance 2"
+"LVAW;d","M-Mode","Depth","mm","1.462500","0.129268","1.371094","1.553906",
+"LVAW;s","M-Mode","Depth","mm","1.873828","6.463398E-02","1.919531","1.828125",
+"LVID;d","M-Mode","Depth","mm","3.267773","3.231699E-02","3.244922","3.290625",
+"LVID;s","M-Mode","Depth","mm","2.033789","3.231699E-02","2.010937","2.056641",
+"LVPW;d","M-Mode","Depth","mm","1.531055","9.695097E-02","1.599609","1.462500",
+"LVPW;s","M-Mode","Depth","mm","1.873828","0.000000","1.873828","1.873828",
+
+Calculation,,Units,
+"EF",,"%",69.182355,
+"FS",,"%",37.762231,
+"LV Mass AW",,"mg",221.736676,
+"LV Mass AW (Corrected)",,"mg",177.389341,
+"LV Vol;d",,"uL",43.096424,
+"LV Vol;s",,"uL",13.281303,
+
+
+
