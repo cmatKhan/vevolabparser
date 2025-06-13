@@ -1,0 +1,5 @@
+Measurement,Mode,Parameter,Units,Avg,STD,Instance 1,Instance 2
+A',PW Tissue Doppler Mode,Velocity,mm/s,-14.43856,0,-14.43856,
+E',PW Tissue Doppler Mode,Velocity,mm/s,-13.903799,0,-13.903799,
+MV A,PW Doppler Mode,Velocity,mm/s,150.056751,0,150.056751,150.056751
+MV E,PW Doppler Mode,Velocity,mm/s,429.574229,0,429.574229,429.574229

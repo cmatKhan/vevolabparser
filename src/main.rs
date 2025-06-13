@@ -3,7 +3,8 @@ use csv::Writer;
 use std::error::Error;
 use std::path::PathBuf;
 use std::path::Path;
-use csv::Reader;
+use std::fs::File;
+use std::io::{BufRead, BufReader};
 
 fn parse_opt_f64(s: &str) -> Option<f64> {
     if s.trim().is_empty() {
@@ -13,36 +14,37 @@ fn parse_opt_f64(s: &str) -> Option<f64> {
     }
 }
 
-fn parse_csv_line(line: &str) -> Vec<String> {
-    line.split(',').map(|s| s.trim().to_string()).collect()
-}
-fn detect_series_name(fields: &[String]) -> Option<String> {
-    // Implement logic to detect series name from fields
-    // Placeholder implementation
-    if fields.len() > 0 && fields[0].starts_with("Series Name") {
-        Some(fields[0].clone())
+fn detect_series_name(fields: &[&str]) -> Option<String> {
+    if fields.len() == 2 && fields[0].starts_with("Series Name") {
+        Some(fields[1].into())
     } else {
         None
     }
 }
-fn detect_protocol_name(fields: &[String]) -> Option<String> {
-    // Implement logic to detect protocol name from fields
-    // Placeholder implementation
-    if fields.len() > 0 && fields[0].starts_with("Protocol Name") {
-        Some(fields[0].clone())
+/// Detects the protocol name from the CSV header
+/// Note that Protocol Name can occur in different contexts. This should only be
+/// called if in the InSeries state.
+fn detect_protocol_name(fields: &[&str]) -> Option<String> {
+    if fields.len() == 2 && fields[0].starts_with("Protocol Name") && fields[1] != "" {
+        eprintln!("protocol name {}", fields[1]);
+        Some(fields[1].into())
     } else {
         None
     }
 }
+
+/// Checks if the current line is a measurement header.
+/// The Measurement headers must start with Measurement, have 8 fields and end with
+/// Instance 2.
 fn is_measurement_header(fields: &[String]) -> bool {
-    // Implement logic to check if the line is a measurement header
-    // Placeholder implementation
-    fields.len() > 0 && fields[0].starts_with("Measurement")
+    fields.len() == 8 && fields[0].starts_with("Measurement") && fields[7].starts_with("Instance 2")
 }
+
+/// Checks if the current line is a calculation start.
+/// The Calculation headers must start with Calculation, have length 4 where the third
+/// column is "Units".
 fn is_calculation_start(fields: &[String]) -> bool {
-    // Implement logic to check if the line indicates the start of a calculation
-    // Placeholder implementation
-    fields.len() > 0 && fields[0].starts_with("Calculation")
+    fields.len() == 4 && fields[0].starts_with("Calculation") && fields[2].starts_with("Units")
 }
 
 /// Represents the current parsing state of the CSV parser.
@@ -145,13 +147,16 @@ struct CalculationRow {
 }
 
 impl CsvRow for CalculationRow {
+    /// This takes a Series ID, Protocol name, and a slice of field strings which is
+    /// parsed directly from the CSV. the Calculation table structure has 4 columns,
+    /// but the second is empty, hence using index 0, 2 and 3
     fn new(id: String, protocol: String, fields: &[&str]) -> Self {
         Self {
             id,
             protocol,
             calculation: fields.get(0).map(|s| s.trim_matches('"').to_string()),
-            units: fields.get(1).map(|s| s.trim_matches('"').to_string()),
-            value: fields.get(2).and_then(|s| parse_opt_f64(s)),
+            units: fields.get(2).map(|s| s.trim_matches('"').to_string()),
+            value: fields.get(3).and_then(|s| parse_opt_f64(s)),
         }
     }
 
@@ -221,25 +226,43 @@ impl CsvTable<CalculationRow> for CalculationTable {
 fn parse_vevolab_csv(
     input_path: &Path,
 ) -> Result<(MeasurementTable, CalculationTable), Box<dyn Error>> {
-    let mut rdr = Reader::from_path(input_path)?;
+    let file = File::open(input_path)?;
+    let reader = BufReader::new(file);
     let mut state = ParseState::Idle;
 
     let mut measurement_table = MeasurementTable::new();
     let mut calculation_table = CalculationTable::new();
 
-    for result in rdr.records() {
-        let record = result?;
-        let fields: Vec<String> = parse_csv_line(&record.iter().collect::<Vec<&str>>().join(","));
+    for line_result in reader.lines() {
+        let line = line_result?;
+        let line = line.trim();
+        if line.is_empty() {
+            continue;
+        }
+
+
+        let record = line.split(',')
+            .map(|s| s.trim().to_string())
+            .collect::<Vec<String>>();
+ 
+        // Skip empty lines
+        if record.iter().all(|s| s.trim().is_empty()) {
+            continue;
+        }
+        let fields: Vec<String> = record
+            .iter()
+            .map(|s| s.trim().trim_matches('"').to_string())
+            .collect();
         let field_refs: Vec<&str> = fields.iter().map(|s| s.as_str()).collect();
 
         match &state {
             ParseState::Idle => {
-                if let Some(series_id) = detect_series_name(&fields) {
+                if let Some(series_id) = detect_series_name(&field_refs) {
                     state = ParseState::InSeries { id: series_id };
                 }
             }
             ParseState::InSeries { id } => {
-                if let Some(protocol_name) = detect_protocol_name(&fields) {
+                if let Some(protocol_name) = detect_protocol_name(&field_refs) {
                     state = ParseState::InProtocol {
                         id: id.clone(),
                         protocol: protocol_name,
@@ -252,22 +275,41 @@ fn parse_vevolab_csv(
                         id: id.clone(),
                         protocol: protocol.clone(),
                     };
-                } else if is_calculation_start(&fields) {
+                }
+            }
+            ParseState::InMeasurement { id, protocol } => {
+
+                if is_calculation_start(&fields){
                     state = ParseState::InCalculation {
                         id: id.clone(),
                         protocol: protocol.clone(),
                     };
+                    continue; // Skip to next iteration to handle calculation
+                } else{
+
+                    let row = MeasurementRow::new(id.clone(), protocol.clone(), &field_refs);
+                    measurement_table.add_row(row);
                 }
             }
-            ParseState::InMeasurement { id, protocol } => {
-                let row = MeasurementRow::new(id.clone(), protocol.clone(), &field_refs);
-                measurement_table.add_row(row);
-            }
             ParseState::InCalculation { id, protocol } => {
-                let row = CalculationRow::new(id.clone(), protocol.clone(), &field_refs);
-                calculation_table.add_row(row);
+                if let Some(protocol_name) = detect_protocol_name(&field_refs) {
+                    state = ParseState::InProtocol {
+                        id: id.clone(),
+                        protocol: protocol_name,
+                    };
+                    continue;
+                }
+                if let Some(series_id) = detect_series_name(&field_refs) {
+                    state = ParseState::InSeries { id: series_id };
+                } else {
+                    let row = CalculationRow::new(id.clone(), protocol.clone(), &field_refs);
+                    calculation_table.add_row(row);
+                }
             }
         }
+
+        // print state
+        // eprintln!("State: {:?}", state);
     }
 
     Ok((measurement_table, calculation_table))
@@ -304,7 +346,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     eprintln!("Parsing file: {}", cli.input.display());
 
-    let (measurement_table, calculation_table) = parse_visualsonics_csv(&cli.input)?;
+    let (measurement_table, calculation_table) = parse_vevolab_csv(&cli.input)?;
 
     let output_prefix = cli
         .input
@@ -331,6 +373,26 @@ mod tests {
     use super::*; // gives access to private items in main.rs
 
     #[test]
+    fn test_detect_series_name() {
+        let fields = vec![
+            "Series Name",
+            "10-a",
+        ];
+        let result = detect_series_name(&fields);
+        assert_eq!(result, Some("10-a".to_string()));
+    }
+
+    #[test]
+    fn test_detect_protocol_name() {
+        let fields = vec![
+            "Protocol Name",
+            "MV Flow",
+        ];
+        let result = detect_protocol_name(&fields);
+        assert_eq!(result, Some("MV Flow".to_string()));
+    }
+
+    #[test]
     fn test_measurement_row_parsing() {
         let fields = vec![
             "A'",
@@ -352,12 +414,23 @@ mod tests {
 
     #[test]
     fn test_calculation_row_parsing() {
-        let fields = vec!["EF", "%", "73.5"];
+        let fields = vec!["A'/E'", "", "none", "1.538462"];
         let row = CalculationRow::new("12-0".into(), "SAX M-Mode".into(), &fields);
 
-        assert_eq!(row.calculation.as_deref(), Some("EF"));
-        assert_eq!(row.units.as_deref(), Some("%"));
-        assert_eq!(row.value, Some(73.5));
+        assert_eq!(row.calculation.as_deref(), Some("A'/E'"));
+        assert_eq!(row.units.as_deref(), Some("none"));
+        assert_eq!(row.value, Some(1.538462));
+    }
+
+    #[test]
+    fn test_is_calculation_start() {
+        let fields = vec![
+            "Calculation".to_string(),
+            "".to_string(),
+            "Units".to_string(),
+            "".to_string(),
+        ];
+        assert!(is_calculation_start(&fields));
     }
 
     #[test]
@@ -383,13 +456,13 @@ mod tests {
 
     #[test]
     fn test_calculation_table_add_row() {
-        let fields = vec!["EF", "%", "73.5"];
+        let fields = vec!["A'/E'", "", "none", "1.538462"];
         let row = CalculationRow::new("12-0".into(), "SAX M-Mode".into(), &fields);
 
         let mut table = CalculationTable::new();
         table.add_row(row);
 
         assert_eq!(table.rows.len(), 1);
-        assert_eq!(table.rows[0].value, Some(73.5));
+        assert_eq!(table.rows[0].value, Some(1.538462));
     }
 }
