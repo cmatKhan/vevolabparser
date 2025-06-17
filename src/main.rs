@@ -25,7 +25,7 @@ fn detect_series_name(fields: &[&str]) -> Option<String> {
 /// Note that Protocol Name can occur in different contexts. This should only be
 /// called if in the InSeries state.
 fn detect_protocol_name(fields: &[&str]) -> Option<String> {
-    if fields.len() == 2 && fields[0].starts_with("Protocol Name") && fields[1] != "" {
+    if fields.len() == 2 && fields[0].starts_with("Protocol Name") && !fields[1].is_empty() {
         Some(fields[1].into())
     } else {
         None
@@ -109,7 +109,7 @@ impl CsvRow for MeasurementRow {
         Self {
             id,
             protocol,
-            measurement: fields.get(0).map(|s| s.trim_matches('"').to_string()),
+            measurement: fields.first().map(|s| s.trim_matches('"').to_string()),
             mode: fields.get(1).map(|s| s.trim_matches('"').to_string()),
             parameter: fields.get(2).map(|s| s.trim_matches('"').to_string()),
             units: fields.get(3).map(|s| s.trim_matches('"').to_string()),
@@ -153,7 +153,7 @@ impl CsvRow for CalculationRow {
         Self {
             id,
             protocol,
-            calculation: fields.get(0).map(|s| s.trim_matches('"').to_string()),
+            calculation: fields.first().map(|s| s.trim_matches('"').to_string()),
             units: fields.get(2).map(|s| s.trim_matches('"').to_string()),
             value: fields.get(3).and_then(|s| parse_opt_f64(s)),
         }
