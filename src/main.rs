@@ -26,7 +26,6 @@ fn detect_series_name(fields: &[&str]) -> Option<String> {
 /// called if in the InSeries state.
 fn detect_protocol_name(fields: &[&str]) -> Option<String> {
     if fields.len() == 2 && fields[0].starts_with("Protocol Name") && fields[1] != "" {
-        eprintln!("protocol name {}", fields[1]);
         Some(fields[1].into())
     } else {
         None
