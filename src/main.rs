@@ -1,10 +1,10 @@
 use clap::Parser;
 use csv::Writer;
 use std::error::Error;
-use std::path::PathBuf;
-use std::path::Path;
 use std::fs::File;
 use std::io::{BufRead, BufReader};
+use std::path::Path;
+use std::path::PathBuf;
 
 fn parse_opt_f64(s: &str) -> Option<f64> {
     if s.trim().is_empty() {
@@ -239,11 +239,11 @@ fn parse_vevolab_csv(
             continue;
         }
 
-
-        let record = line.split(',')
+        let record = line
+            .split(',')
             .map(|s| s.trim().to_string())
             .collect::<Vec<String>>();
- 
+
         // Skip empty lines
         if record.iter().all(|s| s.trim().is_empty()) {
             continue;
@@ -277,15 +277,13 @@ fn parse_vevolab_csv(
                 }
             }
             ParseState::InMeasurement { id, protocol } => {
-
-                if is_calculation_start(&fields){
+                if is_calculation_start(&fields) {
                     state = ParseState::InCalculation {
                         id: id.clone(),
                         protocol: protocol.clone(),
                     };
                     continue; // Skip to next iteration to handle calculation
-                } else{
-
+                } else {
                     let row = MeasurementRow::new(id.clone(), protocol.clone(), &field_refs);
                     measurement_table.add_row(row);
                 }
@@ -331,7 +329,6 @@ struct Cli {
     input: PathBuf,
 }
 
-
 fn main() -> Result<(), Box<dyn Error>> {
     let cli = Cli::parse();
 
@@ -373,20 +370,14 @@ mod tests {
 
     #[test]
     fn test_detect_series_name() {
-        let fields = vec![
-            "Series Name",
-            "10-a",
-        ];
+        let fields = vec!["Series Name", "10-a"];
         let result = detect_series_name(&fields);
         assert_eq!(result, Some("10-a".to_string()));
     }
 
     #[test]
     fn test_detect_protocol_name() {
-        let fields = vec![
-            "Protocol Name",
-            "MV Flow",
-        ];
+        let fields = vec!["Protocol Name", "MV Flow"];
         let result = detect_protocol_name(&fields);
         assert_eq!(result, Some("MV Flow".to_string()));
     }
