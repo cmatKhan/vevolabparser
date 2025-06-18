@@ -14,29 +14,11 @@ Measurement Description: Cardiac Package
 
 ## Table of Contents
 - [Installation](#installation)
-    - [From crates](#from-crates)
     - [From Release Binaries](#from-release-binaries)
+    - [From crates](#from-crates)
 - [Output](#output)
 
 ## Installation
-
-### From crates (recommended)
-
-First, [install Rust](https://www.rust-lang.org/tools/install). This includes the
-`cargo` package manager, which is used to install Rust packages.
-
-Then you can install vevolabparser with the following command:
-
-```bash
-cargo install vevolabparser
-```
-
-This will make the `vevolabparser` command available in your `$PATH`, allowing you to
-run it from any terminal, e.g.:
-
-```bash
-vevolabparser --help
-```
 
 ### From Release Binaries
 
@@ -72,6 +54,24 @@ vevolabparser-windows-latest.exe
 You can run it from cmd or PowerShell directly. If you are not using the terminal,
 consult online resources for how to make .exe files easily accessible from your
 file system.
+
+### From crates
+
+First, [install Rust](https://www.rust-lang.org/tools/install). This includes the
+`cargo` package manager, which is used to install Rust packages.
+
+Then you can install vevolabparser with the following command:
+
+```bash
+cargo install vevolabparser
+```
+
+This will make the `vevolabparser` command available in your `$PATH`, allowing you to
+run it from any terminal, e.g.:
+
+```bash
+vevolabparser --help
+```
 
 ## Output
 
